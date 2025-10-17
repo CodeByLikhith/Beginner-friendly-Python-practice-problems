@@ -68,9 +68,19 @@ print("Sum of a and b:", sum_ab)
 expr1 = 10 + 20 - 30 + 5
 print("10 + 20 - 30 + 5 =", expr1)
 
-# Expression 2
-expr2 = 5 + 10  # Assuming $5 + 10 Rs
-print("$5 + 10 Rs =", expr2)
+# Expression 2: $5 + 10 Rs (convert USD to INR first)
+usd_to_inr = 82          # Conversion rate: 1 USD = 82 INR
+amount_usd = 5
+amount_rs = 10
+
+# Convert USD to INR
+amount_usd_in_rs = amount_usd * usd_to_inr
+
+# Total in INR
+total_amount = amount_usd_in_rs + amount_rs
+print("5 USD + 10 Rs =", total_amount, "Rs")
+
+
 ```
 
 ---
